@@ -1,30 +1,33 @@
+/*#include <iostream>
+#include <conio.h>
+using namespace std;
+*/
 #include<constream.h>
-//using namespace std;
 
-int & f()
+int &f()
 {
-	int a=10;
-	int &b=a;
-	cout<<"&b as b in f()"<<b<<endl;
+	int a = 10;
+	int &b = a;
+	cout << "&b as b in f()" << b << endl;
 	return b;
 }
 
-int & m()
+int &m()
 {
-	int &a=0;
-	for(int i=0;i<=10;i++)
+	int &a=0;	//int &a=a
+	for (int i = 0; i <= 10; i++)
 	{
 		a++;
 	}
-	cout<<"a in m()"<<a<<endl;
+	cout << "a in m()" << a << endl;
 	return a;
 }
 
 int main()
-{   clrscr();
-	int &n=f();
+{
+	int &n = f();
 	m();
-	cout<<n<<endl;
+	cout << n << endl;
 	getch();
 	return 0;
 }
