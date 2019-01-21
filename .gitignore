@@ -20,3 +20,5 @@ Thumbs.db
 #other files & folders
 # 01_C++_Programs/00_Programs_list.jpg
 .vscode/
+**/a.out
+**/a.exe
