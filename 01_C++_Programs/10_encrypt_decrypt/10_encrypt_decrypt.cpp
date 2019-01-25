@@ -19,7 +19,7 @@ main(int argc, char const *argv[])
         cout << "Press 1 to encrypt.\n";
         cout << "Press 2 to decrypt.\n";
         cout << "Press 3 to exit.\n";
-        cin>>opt;
+        cin >> opt;
         switch (opt)
         {
         case 1:
@@ -45,7 +45,7 @@ void encrypt()
     cout << "Give any input to encrypt it.\n";
     //getch();
     // fflush(stdin);
-    cin.get();
+    cin.ignore();
     getline(cin, input);
     for (int i = 0; i < input.length(); i++)
     {
