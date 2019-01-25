@@ -1,0 +1,113 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+:focus{
+    outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+
+.formParent {
+    display: table;
+    height: 100vh;
+     width: 100%;
+    text-align: center;
+   
+}
+
+.formParent  form{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-in {
+    border: 1px solid #000;
+    max-width: 270px;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(135, 206, 250, 0.3686274509803922);
+}
+.form-in h2 {
+    color: #006400;
+    margin-bottom: 20px;
+}
+.formEle input[type="email"],
+.formEle input[type="password"],
+.formEle input[type="text"],
+.formEle input[type="date"]
+, select, textarea{
+    width: 100%;
+    padding: 5px 10px;
+
+    border: 1px solid #ccc;
+}
+.formEle{
+    margin-bottom: 10px;
+}
+
+.formEle:last-child input {
+    margin: 0 5px;
+}
+
+.formEle input[type="submit"]{
+    background: #607D8B;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 0;
+    padding: 10px 25px;
+    border-radius:50px; 
+    cursor: pointer;
+    transition: 500ms all;
+    -moz-transition: 500ms all;
+    -webkit-transition: 500ms all;
+    -o-transition: 500ms all;
+    -ms-transition: 500ms all;
+
+}
+.formEle input[type="submit"]:hover {
+    background: lightskyblue;
+    box-shadow: 0 5px 10px rgba(135, 206, 250, 0.3686274509803922);
+}
+
+.form-in {
+    border: 1px solid #000;
+    max-width: 270px;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(135, 206, 250, 0.3686274509803922);
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+form#rFrom {
+    background-image: url(https://www.awwwards.com/awards/images/2012/05/patterns-website-51.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+form#rFrom:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
