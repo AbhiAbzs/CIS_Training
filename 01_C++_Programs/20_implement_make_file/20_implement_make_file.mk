@@ -1,0 +1,1 @@
+# Create a small project where include header files declaring all variables and functions prototype, then create 2 source files *.cpp which make use of those variables and functions according to problem. Now create a maefile and then compile the project.
