@@ -1,0 +1,31 @@
+.container-fluid {
+    background-image: url("../img/bodybg.jpg");
+    background-size: cover;
+}
+
+.formParent {
+    display: table;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+}
+
+.formParent form {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#display::placeholder {
+    text-align: right;
+}
+
+.logo {
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.logo a img{
+    height: 50px;
+}
