@@ -4,6 +4,7 @@ let display = document.querySelector("#display div.row");
 let checkbox = document.querySelector("#checkbox_alert");
 let alertboxPara = document.querySelector(".alert-danger p");
 let arr = [];
+let colorArr=[];
 
 // code for Response to click event for printing tables
 print.addEventListener("click", function () {
@@ -26,6 +27,7 @@ function response() {
         } else {
             if (arr.indexOf(input.value) == -1) {
                 arr.push(input.value);
+                colorArr.push(getBgColor());
                 arr.forEach(append);
                 arr.forEach(printTable);
             } else {
@@ -63,8 +65,9 @@ function response() {
 // function to create & append child elements to display
 function append(num) {
     let elem = document.createElement("div");
-    elem.className = "col-xs-2 col-sm-2";
+    elem.className="col-xs-2 col-sm-2";
     elem.id = "div" + num;
+    elem.style.backgroundColor=colorArr[arr.indexOf(num)];
     display.appendChild(elem);
 }
 
@@ -80,4 +83,15 @@ function displayAlertBox() {
     $("#alertBox").fadeIn(1500, function () {
         $(this).delay(20).fadeOut(1500);
     });
+}
+
+// Random colour generator
+function getBgColor() {
+    let color = "rgb(" + randRGBVal() + "," + randRGBVal() + "," + randRGBVal() + ")";
+    return color;
+}
+
+// Returns random values for random color generator. // just a wraper
+function randRGBVal() {
+    return parseInt(Math.random() * 256);
 }
