@@ -50,6 +50,7 @@ function response() {
         } else {
             if (arr.indexOf(input.value) == -1) {
                 arr.push(input.value);
+                colorArr.push(getBgColor());
                 arr.forEach(append);
                 arr.forEach(printTable);
             } else {
