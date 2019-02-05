@@ -1,10 +1,10 @@
-let print = document.querySelector("#print");
-let input = document.querySelector("#input");
-let display = document.querySelector("#display div.row");
-let checkbox = document.querySelector("#checkbox_alert");
-let alertboxPara = document.querySelector(".alert-danger p");
-let arr = [];
-let colorArr=[];
+let print = document.querySelector("#print"),
+    input = document.querySelector("#input"),
+    display = document.querySelector("#display div.row"),
+    checkbox = document.querySelector("#checkbox_alert"),
+    alertboxPara = document.querySelector(".alert-danger p"),
+    arr = [],
+    colorArr = [];
 
 // code for Response to click event for printing tables
 print.addEventListener("click", function () {
@@ -66,9 +66,9 @@ function response() {
 // function to create & append child elements to display
 function append(num) {
     let elem = document.createElement("div");
-    elem.className="col-xs-2 col-sm-2";
+    elem.className = "col-xs-2 col-sm-2";
     elem.id = "div" + num;
-    elem.style.backgroundColor=colorArr[arr.indexOf(num)];
+    elem.style.backgroundColor = colorArr[arr.indexOf(num)];
     display.appendChild(elem);
 }
 

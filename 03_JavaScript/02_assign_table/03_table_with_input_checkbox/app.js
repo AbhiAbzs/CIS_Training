@@ -1,9 +1,9 @@
-let print = document.querySelector("#print");
-let input = document.querySelector("#input");
-let display = document.querySelector("#display div.row");
-let checkbox = document.querySelector("#checkbox_alert");
-let alertboxPara = document.querySelector(".alert-danger p");
-let arr = [];
+let print = document.querySelector("#print"),
+    input = document.querySelector("#input"),
+    display = document.querySelector("#display div.row"),
+    checkbox = document.querySelector("#checkbox_alert"),
+    alertboxPara = document.querySelector(".alert-danger p"),
+    arr = [];
 
 // code for Response to click event for printing tables
 print.addEventListener("click", function () {

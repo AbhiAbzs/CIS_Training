@@ -1,6 +1,6 @@
-let print = document.querySelector("#print");
-let input = document.querySelector("#input");
-let display = document.querySelector("#display");
+let print = document.querySelector("#print"),
+    input = document.querySelector("#input"),
+    display = document.querySelector("#display");
 
 print.addEventListener("click", function () {
     display.innerHTML = "";
