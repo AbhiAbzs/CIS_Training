@@ -1,0 +1,62 @@
+[
+    {
+        "id": 40,
+        "type": "general",
+        "setup": "Want to hear a joke about a peice of paper?",
+        "punchline": "Never mind...it's tearable"
+    },
+    {
+        "id": 10,
+        "type": "general",
+        "setup": "What kind of shoes does a thief wear?",
+        "punchline": "Sneakers"
+    },
+    {
+        "id": 56,
+        "type": "programming",
+        "setup": "How do you check if a webpage is HTML5?",
+        "punchline": "Try it out on Internet Explorer"
+    },
+    {
+        "id": 15,
+        "type": "programming",
+        "setup": "What's the best thing about a Boolean?",
+        "punchline": "Even if you're wrong, you're only off by a bit."
+    },
+    {
+        "id": 65,
+        "type": "general",
+        "setup": "Well...",
+        "punchline": "That’s a deep subject."
+    },
+    {
+        "id": 59,
+        "type": "programming",
+        "setup": "Lady: How do I spread love in this cruel world?",
+        "punchline": "Random Dude: [...💘]"
+    },
+    {
+        "id": 75,
+        "type": "general",
+        "setup": "What do you give to a lemon in need?",
+        "punchline": "Lemonaid."
+    },
+    {
+        "id": 8,
+        "type": "general",
+        "setup": "How many lips does a flower have?",
+        "punchline": "Tulips"
+    },
+    {
+        "id": 36,
+        "type": "general",
+        "setup": "Why did the mushroom get invited to the party?",
+        "punchline": "Because he was a fungi."
+    },
+    {
+        "id": 54,
+        "type": "general",
+        "setup": "I had a dream that I was a muffler last night.",
+        "punchline": "I woke up exhausted!"
+    }
+]

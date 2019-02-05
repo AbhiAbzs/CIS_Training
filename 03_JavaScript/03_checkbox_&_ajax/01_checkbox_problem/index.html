@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Checkbox Hell</title>
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        #display,#checkboxGenerator{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-danger fixed-bottom text-center" id="alertBox" style="display:none;">
+            <p></p>
+        </div>
+        <div class="row" id="checkboxGenerator">
+            <input type="number" id="checkboxValInput">
+            <button id="addCheckBoxBtn" class="btn btn-lg btn-outline-info">addCheckBox</button>
+        </div>
+        <div class="row">
+            <div class="alert alert-success col-md-12" id="display">
+                <p class="text-center"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="checkbox" class="col-sm-9 container"></div>
+        </div>
+    </div>
+</body>
+<script src="./app.min.js"></script>
+
+</html>
