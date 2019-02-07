@@ -14,33 +14,42 @@
     <!-- bootstrap js cdn -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <style>
-
+        form.bg-light{
+            background-color: #f3f3ff !important;
+        }
+        form >*{
+            display: block;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <form action="">
+        <form action="" autocomplete="off" class="col-xs-6 col-sm-6 bg-light p-2">
             <div class="form-group">
                 <div class="form-control">
-                    <label for="firstName">Enter First Name</label>
-                    <input type="text" name="firstName" id="firstName" required>
-                    <label for="lastName">Enter Last Name</label>
-                    <input type="text" name="lastName" id="lastName" required>
-                    <label for="mobileNo">Enter Mobile Number</label>
-                    <input type="number" name="mobileNo" id="mobileNo" required>
+                    <input type="text" name="firstName" id="firstName" required placeholder="Enter your First Name">
+                    <input type="text" name="lastName" id="lastName" required placeholder="Enter your Last Name">
                 </div>
                 <div class="form-control">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
+                    <div class="input-group mb-2 mt-1">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">(+91)</div>
+                            <input type="number" name="mobileNo" id="mobileNo" required maxlength="10" minlength="10" pattern="^[6-9]{1}\d{9}$" placeholder="Enter your Mobile Number">
+                        </div>
+                    </div>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-control">
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="12"
+                        placeholder="Enter your Password">
+                    <input type="password" name="rePassword" id="rePassword" required minlength="8" maxlength="12"
+                        placeholder="Renter your Password">
                 </div>
             </div>
-            <input type="button" class="btn btn-secondary" value="submit">
+            <input type="submit" class="btn btn-outline-info" value="submit">
         </form>
     </div>
 </body>
-<script src="./app.js"></script>
 
 </html>
