@@ -5,49 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Html Form Validation</title>
+    <title>Html & JS Form Validation</title>
     <!-- bootstrap css cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        form.bg-light{
-            background-color: #f3f3ff !important;
-        }
-        form >*{
-            display: block;
-        }
-    </style>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <form action="" autocomplete="off" class="col-xs-6 col-sm-6 bg-light p-2 mb-3">
-            <div class="form-group">
-                <div class="form-control">
-                    <input type="text" name="firstName" id="firstName" placeholder="Enter your First Name">
-                    <input type="text" maxlength="10" name="lastName" id="lastName" placeholder="Enter your Last Name">
-                </div>
-                <div class="form-control">
-                    <div class="input-group mb-2 mt-1">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">(+91)</div>
-                            <input type="number" name="mobileNo" id="mobileNo" maxlength="10" minlength="10" pattern="^[6-9]{1}\d{9}$"
-                                placeholder="Enter your Mobile Number">
-                        </div>
-                    </div>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-control">
-                    <input type="password" name="password" id="password" minlength="8" maxlength="12" placeholder="Enter your Password">
-                    <input type="password" name="rePassword" id="rePassword" minlength="8" maxlength="12" placeholder="Renter your Password">
-                </div>
-            </div>
-            <input class="btn btn-outline-info" value="submit">
-        </form>
-        <div class="alert alert-danger alert-dismissible hide" role="alert" id="errDisplay">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <div class="alert alert-danger alert-dismissible fixed" role="alert" id="errDisplay">
+            <button type="button" class="close">
                 <span aria-hidden="true">&times;</span>
             </button>
             <p><strong></strong></p>
+        </div>
+        <div class="form-outer">
+            <div class="form-div">
+                <form action="" autocomplete="off" class="col-xs-6 col-sm-6 bg-light p-3">
+                    <div class="form-group">
+                        <div class="form-control">
+                            <input type="text" name="firstName" id="firstName" required maxlength="10" placeholder="Enter your First Name">
+                            <input type="text" name="lastName" id="lastName" required maxlength="10" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="form-control">
+                            <div class="input-group mb-2 mt-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="mobileNo">(+91)</label>
+                                    <input type="number" name="mobileNo" id="mobileNo" required maxlength="10"
+                                        minlength="10" pattern="^[6-9]{1}\d{9}$" placeholder="Enter your Mobile Number">
+                                </div>
+                            </div>
+                            <input type="email" name="email" id="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-control">
+                            <input type="password" name="password" id="password" required minlength="8" maxlength="12"
+                                placeholder="Enter your Password">
+                            <input type="password" name="rePassword" id="rePassword" required minlength="8" maxlength="12"
+                                placeholder="Confirm your Password">
+                        </div>
+                        <div class="form-control">
+                            <label for="city">City:</label>
+                            <select class="form-control" name="city" id="city" required>
+                                <option value="Indore">Indore</option>
+                                <option value="Bhopal">Bhopal</option>
+                                <option value="None" selected>Select your city</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="gender">Select your Gender:</label>
+                            <div id="gender">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="male" value="male" required>
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="female" value="female" required>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="courses">Select your Courses:</label>
+                            <div id="courses">
+                                <label for="java">java</label>
+                                <input type="checkbox" name="java" id="java">
+                                <label for="python">Python</label>
+                                <input type="checkbox" name="python" id="python">
+                                <label for="javascript">JavaScript</label>
+                                <input type="checkbox" name="javascript" id="javascript">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-outline-info" value="submit">
+                </form>
+            </div>
         </div>
     </div>
 </body>
